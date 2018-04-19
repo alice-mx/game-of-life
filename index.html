@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Conway's Game Of Life </title>
+  </head>
+  <body>
+
+    <script src="bundle.js"></script>
+    <div class="full-page"></div>
+    <div class="controls">
+      <div class="panel closed" id="control-panel">
+        <div id="title">
+          <div class = "round-button">
+            <svg id="hide-toggle" height="14" width="14">
+              <polygon points="3,11 7,3 11,11"/>
+            </svg>
+          </div>
+          Settings
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <button id="refresh">Restart</button>
+            <button id="poke">Poke</button>
+            Saturation <input type="range" min="1" max="100" value="100" id="saturation">
+            Lightness <input type="range" min="1" max="100" value="50" id="lightness">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

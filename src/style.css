@@ -1,0 +1,87 @@
+canvas {
+  width: 100vw;
+  z-index: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.controls {
+  width: 200px;
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  top:0;
+  right:0;
+  color: black;
+  font-family: sans-serif;
+  font-size: 10px;
+  padding: 2px;
+}
+
+.controls input {
+  width:100%;
+}
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: white;
+}
+
+.panel .content {
+  height: 300px;
+  transition: linear all 0.5s;
+  overflow:hidden;
+  background-color: #eeeeee;
+}
+
+.panel .content .wrapper {
+  padding:5px;
+}
+
+.panel button {
+  width: 100%;
+  padding:5px;
+  margin: 5px 0;
+}
+
+.panel.closed .content {
+  height: 0px;
+}
+
+.rainbow-range {
+  background-image: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+  width:100px;
+  height:2px;
+}
+
+#title {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  height: 16px;
+  text-align:center;
+}
+
+.panel #hide-toggle {
+  transform: rotate(0deg);
+  transition: all 0.3s linear;
+}
+.panel.closed #hide-toggle {
+  transform: rotate(180deg);
+}
+
+.round-button {
+  border-radius: 50%;
+  background-color: #eeeeee;
+  width: 14px;
+  height: 14px;
+  position:absolute;
+}
+
+.round-button svg {
+  fill: #bbbbbb;
+}
